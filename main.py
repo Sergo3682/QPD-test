@@ -8,7 +8,8 @@ while(int(number) != 0):
     cur_sum = 0
     number = input('Enter a decimel number:\n')
     for digit in number:
-        cur_sum += int(digit)
+         if digit != '-':
+            cur_sum += int(digit)
     if cur_sum == max_sum:
         max_nums += number + ' '
     elif cur_sum > max_sum:
